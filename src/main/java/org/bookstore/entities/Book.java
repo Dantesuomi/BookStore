@@ -36,8 +36,8 @@ public class Book {
     @NotNull
     @NotEmpty
     private Year publicationYear;
-    //@ManyToOne
-    //@JoinColumn(name = "user_id")
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
 }

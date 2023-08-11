@@ -4,12 +4,15 @@ import org.bookstore.entities.Book;
 import org.bookstore.entities.User;
 import org.bookstore.enums.Genre;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
+
 public interface BookRepository extends JpaRepository<User, Long> {
 
-    Book getBookById(Long id);
+    /*Book getBookById(Long id);
 
     List<Book> getBooksByIdIsNotNull();
 
@@ -18,5 +21,5 @@ public interface BookRepository extends JpaRepository<User, Long> {
     List<Book> findByGenreContainingIgnoreCase(Genre genre);
 
     List<Book> findByAuthorContainingIgnoreCase(String query);
-
+*/
 }
